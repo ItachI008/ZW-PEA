@@ -85,7 +85,7 @@ export default function Home() {
   // Function to call the Lyzr AI Agent API
   const callLyzrAIAgentAPI = async (prompt) => {
     setIsLoading(true);
-    const apiUrl = 'https://agent-prod.studio.lyzr.ai/v3/inference/chat/';
+    const apiUrl = '';
     const apiKey = ''; // Your Lyzr API Key
 
     const payload = {
@@ -139,7 +139,7 @@ export default function Home() {
       {/* Header */}
       <header className="navbar navbar-expand-lg navbar-light bg-body shadow-sm rounded-bottom-3">
         <div className="container-fluid">
-          <h1 className="navbar-brand mb-0 h1 text-primary">Zero-Waste Prompt Engineer Agent</h1>
+          <h1 className="navbar-brand mb-0 h1 text-primary">ZW-PEA</h1>
           <ThemeToggleButton />
         </div>
       </header>
