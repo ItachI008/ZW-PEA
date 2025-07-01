@@ -86,12 +86,12 @@ export default function Home() {
   const callLyzrAIAgentAPI = async (prompt) => {
     setIsLoading(true);
     const apiUrl = 'https://agent-prod.studio.lyzr.ai/v3/inference/chat/';
-    const apiKey = 'sk-default-evhTCuyEafDXnZd4RXjbu9XyttkmzOlP'; // Your Lyzr API Key
+    const apiKey = ''; // Your Lyzr API Key
 
     const payload = {
-      user_id: "cse.1cr21cs402.balraj.x@gmail.com", // Replace with dynamic user ID if needed
-      agent_id: "68621d25ae3e594ea2e4f2f5",
-      session_id: "68621d25ae3e594ea2e4f2f5-oiikcx9szx", // Replace with dynamic session ID if needed
+      user_id: "", // Replace with dynamic user ID if needed
+      agent_id: "",
+      session_id: "", // Replace with dynamic session ID if needed
       message: prompt
     };
 
