@@ -1,0 +1,23 @@
+
+/* app/globals.css */
+/* You can add any additional global CSS here */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar styles (optional, Bootstrap doesn't provide these) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bs-body-bg); /* Use Bootstrap variable for background */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bs-secondary); /* Use Bootstrap variable for thumb */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-dark-secondary); /* A slightly darker shade for hover */
+}
