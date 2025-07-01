@@ -85,13 +85,17 @@ export default function Home() {
   // Function to call the Lyzr AI Agent API
   const callLyzrAIAgentAPI = async (prompt) => {
     setIsLoading(true);
-    const apiUrl = '';
-    const apiKey = ''; // Your Lyzr API Key
+    // Access environment variables with NEXT_PUBLIC_ prefix
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+    const userId = process.env.NEXT_PUBLIC_USER_ID;
+    const agentId = process.env.NEXT_PUBLIC_AGENT_ID;
+    const sessionId = process.env.NEXT_PUBLIC_SESSION_ID;
 
     const payload = {
-      user_id: "", // Replace with dynamic user ID if needed
-      agent_id: "",
-      session_id: "", // Replace with dynamic session ID if needed
+      user_id: userId,
+      agent_id: agentId,
+      session_id: sessionId,
       message: prompt
     };
 
